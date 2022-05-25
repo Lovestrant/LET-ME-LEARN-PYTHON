@@ -147,50 +147,76 @@
 
 #While Loops
 
-i = 1
-while i<=10:
-    print(f"The I Val is: {i}")
-    print("*" * i)
-    i +=1
+# i = 1
+# while i<=10:
+#     print(f"The I Val is: {i}")
+#     print("*" * i)
+#     i +=1
 
-names = ["John", "Kips", "Jeroo", "Dennis"]
-print(names[0:2]) #It excludes the end Index
+# names = ["John", "Kips", "Jeroo", "Dennis"]
+# print(names[0:2]) #It excludes the end Index
 
-names.insert(2, "Joy")
+# names.insert(2, "Joy")
 
-print(names)
-
-# names.remove("Jeroo") # This removes a named value from an array list
 # print(names)
 
-# names.clear()
-# print(names)
+# # names.remove("Jeroo") # This removes a named value from an array list
+# # print(names)
 
-print(1 in names) # Returns false if 1 don't exist in array
-print('Kips'  in names)
+# # names.clear()
+# # print(names)
 
-print(len(names))
+# print(1 in names) # Returns false if 1 don't exist in array
+# print('Kips'  in names)
 
-#For Loops in Python
-for Items in names:
-    print(Items)
+# print(len(names))
 
-# Same as
+# #For Loops in Python
+# for Items in names:
+#     print(Items)
 
-items = 1
-while items < len(names):
-    print(names[items])
-    items += 1
+# # Same as
+
+# items = 1
+# while items < len(names):
+#     print(names[items])
+#     items += 1
 
 
-numbers = range(5)
-for items in numbers:
-    print(items)
+# numbers = range(5)
+# for items in numbers:
+#     print(items)
 
-theNumbers = range(5,11)
+# theNumbers = range(5,11)
 
-for num in theNumbers:
-    print(num)
+# for num in theNumbers:
+#     print(num)
+
+
+# Python Functions
+
+def my_Function():
+    print("Hello, I am afunction")
+
+my_Function()
+
+def function_two(name, age):
+    print(f"name is: {name} and the age is {age}")
+
+function_two("kemboi", 20)
+
+def names_function( *names, **Kwargs):
+    print(names)
+    print(names[0])
+    print(names[len(names)-1])
+
+names_function("Joy", "Kemboi", "Kiptoo")
+
+names_function("Joy", "Kemboi", "Kiptoo","Mother", "Dad")
+
+
+def my_Other_Function():
+    pass                #incase there are no statements in the function
 
 
 
